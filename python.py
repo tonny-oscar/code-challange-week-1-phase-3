@@ -15,6 +15,7 @@ def count_vowels(text):
     vowels = 'aeiouAEIOU'
     return sum(1 for char in text if char in vowels)
 
+#Function: calculate_factorial
 def calculate_factorial(n):
     if n < 0:
         raise ValueError("Factorial is not defined for negative numbers")
@@ -23,6 +24,7 @@ def calculate_factorial(n):
         result *= i
     return result
 
+#Function: decorator_func
 def decorator_func(func):
     def wrapper(*args, **kwargs):
         print("Decorator Applied")
@@ -32,6 +34,7 @@ def decorator_func(func):
 def apply_decorator(func):
     return decorator_func(func)
 
+#Sequences: Sort List of Tuples 
 def sort_by_age(list_of_tuples):
     return sorted(list_of_tuples, key=lambda x: x[1])
 
